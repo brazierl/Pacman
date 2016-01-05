@@ -1,0 +1,4 @@
+- Sons
+- Passage pacman gauche
+- retour à zéro quand plus de beans
+- Dijkstra
