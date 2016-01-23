@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort0.xnb</Output>
       <Time>2015-12-20T14:15:31.7413921+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort1.xnb</Output>
       <Time>2015-12-20T14:15:31.8104399+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort2.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort2.xnb</Output>
       <Time>2015-12-20T14:15:31.8334566+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort3.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\Mort3.xnb</Output>
       <Time>2015-12-20T14:15:31.855473+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\mur.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\mur.xnb</Output>
       <Time>2015-12-20T14:15:31.875488+01:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman.xnb</Output>
       <Time>2015-12-20T14:15:31.9102283+01:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanBas0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanBas0.xnb</Output>
       <Time>2015-12-20T14:15:32.0873516+01:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanBas1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanBas1.xnb</Output>
       <Time>2015-12-20T14:15:32.104364+01:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanDroite0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanDroite0.xnb</Output>
       <Time>2015-12-20T14:15:32.1253814+01:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanDroite1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanDroite1.xnb</Output>
       <Time>2015-12-20T14:15:32.1453951+01:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanGauche0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanGauche0.xnb</Output>
       <Time>2015-12-20T14:15:32.1674204+01:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanGauche1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanGauche1.xnb</Output>
       <Time>2015-12-20T14:15:32.1929278+01:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanHaut0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanHaut0.xnb</Output>
       <Time>2015-12-20T14:15:32.2164567+01:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanHaut1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacmanHaut1.xnb</Output>
       <Time>2015-12-20T14:15:32.2414735+01:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_2.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_2.xnb</Output>
       <Time>2015-12-20T14:15:31.9297412+01:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_2f.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_2f.xnb</Output>
       <Time>2015-12-20T14:15:31.9487585+01:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_3.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_3.xnb</Output>
       <Time>2015-12-20T14:15:31.9712714+01:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_3f.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_3f.xnb</Output>
       <Time>2015-12-20T14:15:31.9977896+01:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_4.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_4.xnb</Output>
       <Time>2015-12-20T14:15:32.0188053+01:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_4f.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_4f.xnb</Output>
       <Time>2015-12-20T14:15:32.0403184+01:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_f.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pacman_f.xnb</Output>
       <Time>2015-12-20T14:15:32.0693388+01:00</Time>
     </Item>
     <Item>
@@ -196,62 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\pouvoir.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\pouvoir.xnb</Output>
       <Time>2015-12-20T14:15:32.2985151+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\Invincible.wav</Source>
-      <Name>sons\Invincible</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\Invincible.xnb</Output>
-      <Time>2015-12-18T15:50:59.8476266+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\MonsterEaten.wav</Source>
-      <Name>sons\MonsterEaten</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\MonsterEaten.xnb</Output>
-      <Time>2015-12-18T15:50:59.9480294+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\PacmanEaten.wav</Source>
-      <Name>sons\PacmanEaten</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\PacmanEaten.xnb</Output>
-      <Time>2015-12-18T15:50:59.9640164+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\PelletEat1.wav</Source>
-      <Name>sons\PelletEat1</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\PelletEat1.xnb</Output>
-      <Time>2015-12-18T15:50:59.9820253+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\PelletEat2.wav</Source>
-      <Name>sons\PelletEat2</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\PelletEat2.xnb</Output>
-      <Time>2015-12-18T15:50:59.9980649+01:00</Time>
-    </Item>
-    <Item>
-      <Source>sons\Siren.wav</Source>
-      <Name>sons\Siren</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\sons\Siren.xnb</Output>
-      <Time>2015-12-18T15:51:00.0220532+01:00</Time>
     </Item>
     <Item>
       <Source>images\barriereFantome.png</Source>
@@ -259,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\barriereFantome.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\barriereFantome.xnb</Output>
       <Time>2015-12-20T14:15:32.32153+01:00</Time>
     </Item>
     <Item>
@@ -268,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\bean.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\bean.xnb</Output>
       <Time>2015-12-20T14:15:32.3445458+01:00</Time>
     </Item>
     <Item>
@@ -277,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeBleu.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeBleu.xnb</Output>
       <Time>2015-12-20T14:15:27.9661806+01:00</Time>
     </Item>
     <Item>
@@ -286,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\FantomePeur0.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\FantomePeur0.xnb</Output>
       <Time>2015-12-20T14:15:27.9811925+01:00</Time>
     </Item>
     <Item>
@@ -295,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\FantomePeur1.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\FantomePeur1.xnb</Output>
       <Time>2015-12-20T14:15:27.9971986+01:00</Time>
     </Item>
     <Item>
@@ -304,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeRose.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeRose.xnb</Output>
       <Time>2015-12-20T14:15:28.0142094+01:00</Time>
     </Item>
     <Item>
@@ -313,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeRouge.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeRouge.xnb</Output>
       <Time>2015-12-20T14:15:28.0302224+01:00</Time>
     </Item>
     <Item>
@@ -322,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeVert.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantomeVert.xnb</Output>
       <Time>2015-12-20T14:15:28.0472356+01:00</Time>
     </Item>
     <Item>
@@ -331,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_cyan.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_cyan.xnb</Output>
       <Time>2015-12-20T14:15:32.3835738+01:00</Time>
     </Item>
     <Item>
@@ -340,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_orange.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_orange.xnb</Output>
       <Time>2015-12-20T14:15:32.4025868+01:00</Time>
     </Item>
     <Item>
@@ -349,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_rose.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_rose.xnb</Output>
       <Time>2015-12-20T14:15:32.4226026+01:00</Time>
     </Item>
     <Item>
@@ -358,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_rouge.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fantome_rouge.xnb</Output>
       <Time>2015-12-20T14:15:32.4406149+01:00</Time>
     </Item>
     <Item>
@@ -367,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\fan_mangeable.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\fan_mangeable.xnb</Output>
       <Time>2015-12-20T14:15:32.3665614+01:00</Time>
     </Item>
     <Item>
@@ -376,8 +322,62 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\images\gros_bean.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\images\gros_bean.xnb</Output>
       <Time>2015-12-20T14:15:28.0632636+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\Invincible.wav</Source>
+      <Name>sons\Invincible</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\Invincible.xnb</Output>
+      <Time>2015-12-18T15:50:59.8476266+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\MonsterEaten.wav</Source>
+      <Name>sons\MonsterEaten</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\MonsterEaten.xnb</Output>
+      <Time>2015-12-18T15:50:59.9480294+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\PacmanEaten.wav</Source>
+      <Name>sons\PacmanEaten</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\PacmanEaten.xnb</Output>
+      <Time>2015-12-18T15:50:59.9640164+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\PelletEat1.wav</Source>
+      <Name>sons\PelletEat1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\PelletEat1.xnb</Output>
+      <Time>2015-12-18T15:50:59.9820253+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\PelletEat2.wav</Source>
+      <Name>sons\PelletEat2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\PelletEat2.xnb</Output>
+      <Time>2015-12-18T15:50:59.9980649+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sons\Siren.wav</Source>
+      <Name>sons\Siren</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\sons\Siren.xnb</Output>
+      <Time>2015-12-18T15:51:00.0220532+01:00</Time>
     </Item>
     <Item>
       <Source>aFont.spritefont</Source>
@@ -385,7 +385,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\aFont.xnb</Output>
+      <Output>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\aFont.xnb</Output>
       <Time>2015-12-21T12:00:47.6770359+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -395,10 +395,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacmanContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\pacman\pacman\pacman\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacmanContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Louis\Documents\Polytech\S5\ISI\TP2_PACMAN_BRAZIER_Louis\Pacman\pacman\pacman\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -427,7 +427,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-12-18T15:17:28.1553301+01:00</Value>
+        <Value>2016-01-09T16:25:24.3180973+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

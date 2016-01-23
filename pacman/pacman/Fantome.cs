@@ -18,18 +18,7 @@ namespace pacman
             Vector2 p1 = Animation.Position;
 
             // Passages latéraux
-            if (Animation.Position.X <= 1)
-            {
-                p1.X = Pacman.XSIZE - Plateau.Coeff.X;
-                Animation.Vitesse = new Vector2(-FacteurVitesse, 0);
-                Animation.Position = p1;
-            }
-            if (Animation.Position.X >= Pacman.XSIZE - Plateau.Coeff.X)
-            {
-                p1.X = 2;
-                Animation.Vitesse = new Vector2(FacteurVitesse, 0);
-                Animation.Position = p1;
-            }
+            TestPassageLateraux(p1);
 
             Vector2 v = Animation.Vitesse;
             Vector2 coord = Plateau.PositionAMatrice(Animation.Position);
@@ -162,6 +151,9 @@ namespace pacman
                 directions.Add(DROITE);
             if (Plateau.Grille[(int)coord.Y, (int)coord.X - 1] != 1 && dir != DROITE)
                 directions.Add(GAUCHE);
+            // Aleatoire pour dijkstra (ne fonctionne pas)
+            /*directions.Add(-1);
+            directions.Add(-2);*/
             int r = RandomNumber(directions.Count);
             switch (directions[r])
             {
@@ -169,6 +161,7 @@ namespace pacman
                 case BAS: return new Vector2(0, FacteurVitesse);
                 case GAUCHE: return new Vector2(-FacteurVitesse, 0);
                 case DROITE: return new Vector2(FacteurVitesse, 0);
+                //default: return Dijkstra.Direction(coord, Plateau.PosPM, Plateau.Grille, FacteurVitesse);
             }
             return Vector2.Zero;
         }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
+using System.Threading;
 
 namespace pacman 
 {
@@ -31,10 +32,9 @@ namespace pacman
         
         protected int raffraichisement = 0;
 
-        private SoundEffect sonPersonnage;
         public Personnage(Game game, string filename, Vector2 vitesseInit, Vector2 positionInit) : base(game)
         {
-            FacteurVitesse = Plateau.Coeff.X / 20;
+            FacteurVitesse = Plateau.Coeff.X / 10;
             Filename = filename;
             BaseFilename = filename;
             vitesseInit.X *= FacteurVitesse;
@@ -55,7 +55,6 @@ namespace pacman
         {
             spritebatch = new SpriteBatch(GraphicsDevice);
             Animation = new ObjetAnime(Game.Content.Load<Texture2D>(@"images\" + Filename),PositionInit,taille,VitesseInit);
-            //sonPersonnage = Game.Content.Load<SoundEffect>(@"sons\")
             base.LoadContent();
         }
 
@@ -90,5 +89,22 @@ namespace pacman
                 EstMort = false;
             }
         }
+        protected void TestPassageLateraux(Vector2 p1)
+        {
+            // Passages latéraux
+            if (Animation.Position.X <= 1)
+            {
+                p1.X = Pacman.XSIZE - Plateau.Coeff.X-1;
+                Animation.Vitesse = new Vector2(-FacteurVitesse, 0);
+                Animation.Position = p1;
+            }
+            if (Animation.Position.X >= Pacman.XSIZE - Plateau.Coeff.X)
+            {
+                p1.X = 2;
+                Animation.Vitesse = new Vector2(FacteurVitesse, 0);
+                Animation.Position = p1;
+            }
+        }
+        
     }
 }

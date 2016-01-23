@@ -20,12 +20,6 @@ Content\images\pacman_4.xnb
 Content\images\pacman_4f.xnb
 Content\images\pacman_f.xnb
 Content\images\pouvoir.xnb
-Content\sons\Invincible.xnb
-Content\sons\MonsterEaten.xnb
-Content\sons\PacmanEaten.xnb
-Content\sons\PelletEat1.xnb
-Content\sons\PelletEat2.xnb
-Content\sons\Siren.xnb
 Content\images\barriereFantome.xnb
 Content\images\bean.xnb
 Content\images\fantomeBleu.xnb
@@ -40,5 +34,10 @@ Content\images\fantome_rose.xnb
 Content\images\fantome_rouge.xnb
 Content\images\fan_mangeable.xnb
 Content\images\gros_bean.xnb
-Content\images\PelletEat1.xnb
+Content\sons\Invincible.xnb
+Content\sons\MonsterEaten.xnb
+Content\sons\PacmanEaten.xnb
+Content\sons\PelletEat1.xnb
+Content\sons\PelletEat2.xnb
+Content\sons\Siren.xnb
 Content\aFont.xnb

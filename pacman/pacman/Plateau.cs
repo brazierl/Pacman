@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,8 @@ namespace pacman
     class Plateau : DrawableGameComponent
     {
         private int largeur = 21;
-        private int hauteur = 28; 
+        private int hauteur = 28;
+        public static Vector2 PosPM { private set; get; }
         private static int[,] grille = {
           {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
           {1,2,2,2,2,2,1,2,2,2,2,2,2,2,1,2,2,2,2,2,1},
@@ -46,13 +48,22 @@ namespace pacman
         private int score = 0;
         private const int POINTSBEAN = 10;
         private const int POINTSFANTOME = 300;
+        private SoundEffect sonSiren;
+        private SoundEffect sonInvincible;
+        private SoundEffect sonFantomeMange;
+        private SoundEffect sonPacmanMange;
+        private SoundEffect sonJoue;
+        private SoundEffectInstance instanceSon;
 
         private int nbVies = 3;
 
         private static bool jeuFini = false;
         public static bool JeuFini
         {
-            get { return jeuFini; }
+            get
+            {
+                return jeuFini;
+            }
         }
         
 
@@ -110,8 +121,13 @@ namespace pacman
 
         protected override void LoadContent()
         {
+            this.sonSiren = Game.Content.Load<SoundEffect>(@"sons\Siren");
+            this.sonInvincible = Game.Content.Load<SoundEffect>(@"sons\Invincible");
+            this.sonFantomeMange = Game.Content.Load<SoundEffect>(@"sons\MonsterEaten");
+            this.sonPacmanMange = Game.Content.Load<SoundEffect>(@"sons\PacmanEaten");
             this.textFont = Game.Content.Load<SpriteFont>("aFont");
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            sonParDefault();
             base.LoadContent();
         }
 
@@ -131,16 +147,20 @@ namespace pacman
 
         public override void Update(GameTime gameTime)
         {
+            TestJeuFini();
             TestCollisionPacman();
             TestCollisionFantomes();
             TestRedemarreJeu();
+            TestReapparitionBeans();
+            TestSonPlateau();
+            PosPM = PositionAMatrice(Pacman.Animation.Position);
             base.Update(gameTime);
         }
         private void DessineFinJeu()
         {
             jeuFini = true;
-            spriteBatch.Draw(Game.Content.Load<Texture2D>(@"images\mur"), new Rectangle(Convert.ToInt32(pacman.Pacman.XSIZE * 0.30f), Convert.ToInt32(pacman.Pacman.YSIZE * 0.30f), Convert.ToInt32(220 * Coeff.X / 20), Convert.ToInt32(120 * Coeff.Y / 20)), Color.Black);
-            spriteBatch.DrawString(this.textFont, "Game Over\nScore final : " + score + "\nAppuyer sur une touche\npour recommencer", new Vector2(pacman.Pacman.XSIZE * 0.31f, pacman.Pacman.YSIZE * 0.31f), Color.Yellow, 0, Vector2.Zero, Coeff.X/20, SpriteEffects.None, 0);
+            spriteBatch.Draw(Game.Content.Load<Texture2D>(@"images\mur"), new Rectangle(Convert.ToInt32(pacman.Pacman.XSIZE * 0.30f), Convert.ToInt32(pacman.Pacman.YSIZE * 0.10f), Convert.ToInt32(220 * Coeff.X / 20), Convert.ToInt32(120 * Coeff.Y / 20)), Color.Black);
+            spriteBatch.DrawString(this.textFont, "Game Over\nScore final : " + score + "\nAppuyer sur une touche\npour recommencer", new Vector2(pacman.Pacman.XSIZE * 0.31f, pacman.Pacman.YSIZE * 0.11f), Color.Yellow, 0, Vector2.Zero, Coeff.X/20, SpriteEffects.None, 0);
         }
         private void DessineMurs()
         {
@@ -194,7 +214,32 @@ namespace pacman
                 }
             }
         }
+        private void TestReapparitionBeans()
+        {
+            if(Beans.Count==0 && Pouvoirs.Count==0)
+            {
+                int s = score;
+                Initialize();
+                Pacman.Animation.Position = Pacman.PositionInit;
+                Pacman.Animation.Vitesse = Vector2.Zero;
+                foreach (Fantome f in Fantomes)
+                {
+                    f.Animation.Position = f.PositionInit;
+                    f.EstMort = false;
+                    f.EstMangeable = false;
+                }
+                score = s;
+            }
+        }
         private void TestCollisionPacman()
+        {
+            CollisionPacmanMurs();
+            CollisionPacmanBeans();
+            CollisionPacmanPouvoirs();
+            CollisionPacmanFantomes();
+            
+        }
+        private void CollisionPacmanMurs()
         {
             foreach (ObjetAnime oa in Murs)
             {
@@ -205,6 +250,9 @@ namespace pacman
                     break;
                 }
             }
+        }
+        private void CollisionPacmanBeans()
+        {
             foreach (ObjetAnime oa in Beans)
             {
                 if (Pacman.Animation.Bbox.Intersects(oa.Bbox))
@@ -212,6 +260,7 @@ namespace pacman
                     if (testCollisionMangeable(oa))
                     {
                         Beans.Remove(oa);
+                        Pacman.JouerSonBean();
                         if (!JeuFini)
                             score += POINTSBEAN;
                         Console.WriteLine("Ramasse Bean");
@@ -219,16 +268,19 @@ namespace pacman
                     }
                 }
             }
+        }
+        private void CollisionPacmanPouvoirs()
+        {
             foreach (ObjetAnime oa in Pouvoirs)
             {
                 if (Pacman.Animation.Bbox.Intersects(oa.Bbox))
                 {
-                    if(testCollisionMangeable(oa))
+                    if (testCollisionMangeable(oa))
                     {
                         Pouvoirs.Remove(oa);
                         foreach (Fantome f in Fantomes)
                         {
-                            if(f.EstMangeable)
+                            if (f.EstMangeable)
                                 f.ReinitTempsMangeable();
                             f.EstMangeable = true;
                         }
@@ -237,24 +289,32 @@ namespace pacman
                     }
                 }
             }
+        }
+        private void CollisionPacmanFantomes()
+        {
             foreach (Fantome f in Fantomes)
             {
                 if (Pacman.Animation.Bbox.Intersects(f.Animation.Bbox))
                 {
-                    if (f.EstMangeable)
+                    if (testCollisionFantome(f.Animation))
                     {
-                        if (!JeuFini)
-                            score += POINTSFANTOME;
-                        f.EstMort = true;
-                        f.ReinitTempsMangeable();
-                    }
-                    else
-                    {
-                        Pacman.EstMort = true;
-                        nbVies--;
-                        foreach (Fantome f2 in Fantomes)
+                        if (f.EstMangeable)
                         {
-                            f2.Animation.Position = f2.PositionInit;
+                            if (!JeuFini)
+                                score += POINTSFANTOME;
+                            f.EstMort = true;
+                            JoueSonManger(sonFantomeMange);
+                            f.ReinitTempsMangeable();
+                        }
+                        else
+                        {
+                            Pacman.EstMort = true;
+                            JoueSonManger(sonPacmanMange);
+                            nbVies--;
+                            foreach (Fantome f2 in Fantomes)
+                            {
+                                f2.Animation.Position = f2.PositionInit;
+                            }
                         }
                     }
                 }
@@ -291,6 +351,23 @@ namespace pacman
                     col = true;
             return col;
         }
+        private bool testCollisionFantome(ObjetAnime oa)
+        {
+            bool col = false;
+            if (Pacman.Animation.Vitesse.X > 0)
+                if (Pacman.Animation.Position.X - oa.Position.X >= 0)
+                    col = true;
+            if (Pacman.Animation.Vitesse.X < 0)
+                if (Pacman.Animation.Position.X - oa.Position.X <= 0)
+                    col = true;
+            if (Pacman.Animation.Vitesse.Y > 0)
+                if (Pacman.Animation.Position.Y - oa.Position.Y >= 0)
+                    col = true;
+            if (Pacman.Animation.Vitesse.Y < 0)
+                if (Pacman.Animation.Position.Y - oa.Position.Y <= 0)
+                    col = true;
+            return col;
+        }
         private void testCollisionMur(ObjetAnime oa, Personnage pe)
         {
             Vector2 p = pe.Animation.Position;
@@ -303,6 +380,21 @@ namespace pacman
             else if (pe.Animation.Vitesse.Y < 0)
                 p.Y = oa.Position.Y + Plateau.Coeff.X;
             pe.RencontreColision = true;
+        }
+
+        private void TestJeuFini()
+        {
+            if (jeuFini)
+            {
+                Pacman.Animation.Vitesse = Vector2.Zero;
+                foreach (Fantome f in Fantomes)
+                {
+                    f.Animation.Position = f.PositionInit;
+                    f.Animation.Vitesse = Vector2.Zero;
+                    f.EstMort = false;
+                    f.EstMangeable = false;
+                }
+            }
         }
         public static Vector2 PositionAMatrice(Vector2 position)
         {
@@ -335,6 +427,51 @@ namespace pacman
                 return true;
             }
             
+        }
+        private void TestSonPlateau()
+        {
+            if (TestFantomesMangeables() && sonJoue.Equals(sonSiren))
+            {
+                sonJoue = sonInvincible;
+                instanceSon.Stop();
+                instanceSon = this.sonInvincible.CreateInstance();
+                instanceSon.Volume = 0.5f;
+                instanceSon.IsLooped = true;
+                instanceSon.Play();
+            }
+            else if((!TestFantomesMangeables() && sonJoue.Equals(sonInvincible)) || instanceSon.State.Equals(SoundState.Stopped))
+            {
+                sonJoue = sonSiren;
+                instanceSon.Stop();
+                instanceSon = this.sonSiren.CreateInstance();
+                instanceSon.Volume = 0.5f;
+                instanceSon.IsLooped = true;
+                instanceSon.Play();
+            }
+        }
+        private void sonParDefault()
+        {
+            sonJoue = sonSiren;
+            instanceSon = this.sonSiren.CreateInstance();
+            instanceSon.Volume = 0.5f;
+            instanceSon.IsLooped = true;
+            instanceSon.Play();
+        }
+        private bool TestFantomesMangeables()
+        {
+            foreach (Fantome f in fantomes)
+            {
+                if (f.EstMangeable)
+                    return true;
+            }
+            return false;
+        }
+
+        private void JoueSonManger(SoundEffect se)
+        {
+            SoundEffectInstance sei = se.CreateInstance();
+            sei.Volume = 1f;
+            sei.Play();
         }
 
     }

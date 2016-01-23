@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,21 @@ namespace pacman
         private int regard = DROITE;
 
         public Vector2 VitesseFuture { get; set; }
+
+        private SoundEffect sonBean1;
+        private SoundEffect sonBean2;
+
+
+        private int nbInstanceSon = 0;
         public PPacman(Game game, string filename, Vector2 vitesseInit, Vector2 positionInit)
             : base(game, filename, vitesseInit, positionInit) { }
+
+        protected override void LoadContent()
+        {
+            this.sonBean1 = Game.Content.Load<SoundEffect>(@"sons\PelletEat1");
+            this.sonBean2 = Game.Content.Load<SoundEffect>(@"sons\PelletEat2");
+            base.LoadContent();
+        }
         public override void Update(GameTime gameTime)
         {
             Vector2 p;
@@ -34,19 +48,8 @@ namespace pacman
             {
                 afficherPFerme();
             }
-            // Passages latéraux
-            if (Animation.Position.X <= 1)
-            {
-                p1.X = Pacman.XSIZE - Plateau.Coeff.X;
-                Animation.Vitesse = new Vector2(-FacteurVitesse, 0);
-                Animation.Position = p1;
-            }
-            if (Animation.Position.X >= Pacman.XSIZE - Plateau.Coeff.X)
-            {
-                p1.X = 2;
-                Animation.Vitesse = new Vector2(FacteurVitesse, 0);
-                Animation.Position = p1;
-            }
+           
+            TestPassageLateraux(p1);
             try
             {
                 if (Controls.CheckActionUp())
@@ -154,8 +157,10 @@ namespace pacman
                 Animation.Position = p;
             Animation.UpdateBoundingBox();
             RencontreColision = false;
+            
             base.Update(gameTime);
         }
+
         private void afficherPOuvert()
         {
             Filename = "pacman_f";
@@ -187,6 +192,23 @@ namespace pacman
                     break;
             }
             UpdateTexture();
+        }
+
+        public void JouerSonBean()
+        {
+            if (nbInstanceSon % 2 == 0)
+            {
+                SoundEffectInstance son = this.sonBean1.CreateInstance();
+                son.Volume = 1f;
+                son.Play();
+            }
+            else
+            {
+                SoundEffectInstance son = this.sonBean2.CreateInstance();
+                son.Volume = 1f;
+                son.Play();
+            }
+            nbInstanceSon++;
         }
     }
 
